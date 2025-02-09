@@ -5,13 +5,16 @@ const menuItems = [
     { id: 2, name: "Смесители",routes:"Smestiteli" },
     { id: 3, name: "Аксессуары",routes:"Aksessuari" },
     { id: 4, name: "Плиты",routes:"Pliti" },
-    { id: 5, name: "Духовки",routes:"Duxovki" },
+    {id:5,name:"Umivalniki",routes:"Umivalniki"},
+    {id:6,name:"Manhattan",routes:"Manhattan"},
+
+
   ];
   
   export default function Hcategories() {
     return (
       <header className="">
-        <nav className="flex space-x-4">
+        <nav className="flex space-x-4 gap-20 text-secondary font-medium text-xl leading-7 justify-between">
           {menuItems.map((item) => (
             <Link to={item.routes} key={item.id}  className="">
               {item.name}

@@ -4,10 +4,10 @@ function InfoHeader() {
     <div className="text-secondary flex justify-between items-center  py-5 ">
         <div className="flex items-center gap-20">
        <div>
-       <select name="" id="">
-            <option value="Азербайджан">Азербайджан</option>
-            <option value="Россия">Россия</option>
-            <option value="Америка">Америка</option>
+       <select className="border-0 bg-none text-secondary cursor-pointer" name="" id="">
+            <option className="bg-none text-secondary  bg-auto bg-primary"  value="Азербайджан">Азербайджан</option>
+            <option className="bg-none text-secondary  bg-auto bg-primary" value="Россия">Россия</option>
+            <option className="bg-none text-secondary  bg-auto bg-primary" value="Америка">Америка</option>
         </select>
        </div>
        <div>
