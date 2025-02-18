@@ -13,15 +13,15 @@ const menuItems = [
   
   export default function Hcategories() {
     return (
-      <header className="">
-        <nav className="flex space-x-4 gap-20 text-secondary font-medium text-xl leading-7 justify-between">
+      <div className="mt-14">
+        <nav className="flex  text-secondary font-medium text-xl leading-7 justify-between">
           {menuItems.map((item) => (
             <Link to={item.routes} key={item.id}  className="">
               {item.name}
             </Link>
           ))}
         </nav>
-      </header>
+      </div>
     );
   }
   
