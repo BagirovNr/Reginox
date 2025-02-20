@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router"; 
 import App from "./App";
 import Moyki from "./components/products/Moyki";
 import Smestiteli from "./components/products/Smestiteli";
@@ -8,6 +8,7 @@ import Pliti from "./components/products/Pliti";
 import Umivalniki from "./components/products/Umivalniki";
 import Manhattan from "./components/products/Manhattan";
 import Products from "./components/products/Products";
+import NotFound from "./components/notFound/NotFound";
 
 const root = document.getElementById("root");
 
@@ -15,17 +16,14 @@ ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="moyki" element={<Moyki />} />
+      <Route path="smestiteli" element={<Smestiteli />} />
+      <Route path="aksessuari" element={<Aksessuari />} />
+      <Route path="pliti" element={<Pliti />} />
+      <Route path="umivalniki" element={<Umivalniki />} />
+      <Route path="manhattan" element={<Manhattan />} />
+      <Route path="products" element={<Products />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
-
-    <Routes>
-    <Route path="Moyki" element={<Moyki/>} />
-    <Route path="Smestiteli" element={<Smestiteli/>} />
-    <Route path="Aksessuari" element={<Aksessuari/>} />
-    <Route path="Pliti" element={<Pliti/>} />
-    <Route path="Umivalniki" element={<Umivalniki/>} />
-    <Route path="Manhattan" element={<Manhattan/>} />
-    <Route path="Products" element={<Products/>} />
-    
-</Routes>
   </BrowserRouter>
-);  
+);
