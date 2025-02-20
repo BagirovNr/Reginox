@@ -21,11 +21,11 @@ export default function Dropdown({ number, mail, name, browser, adress }) {
       </div>
 
       {isOpen && (
-        <div className="duration-500">
+        <div className="duration-500 flex flex-col  gap-3">
           <p  className="mt-2">{adress}</p>
-          <p className="mt-2 flex gap-1 items-center"><Phone size={18} />{number}</p>
-          <p className="mt-2 flex gap-1 items-center"><Mail size={18} />{mail}</p>
-          <p className="mt-2 flex gap-1 items-center"><Globe size={18} />{browser}</p>
+          <a href="+994556680619" className="mt-2 flex gap-4 items-center"><Phone size={18} />{number}</a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlLWsmdFrBqpVNlzzhTNZtxVvnPWQpWdpDGgFvkrshjwFRqFZnHCwjPFjnTwRWkvhpWzvV" className="mt-2 flex gap-4 items-center"><Mail size={18} />{mail}</a>
+          <a href="https://bagirov-nr.netlify.app/" className="mt-2 flex gap-4 items-center"><Globe size={18} />{browser}</a>
         </div>
       )}
     </div>

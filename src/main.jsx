@@ -7,6 +7,7 @@ import Aksessuari from "./components/products/Aksessuari";
 import Pliti from "./components/products/Pliti";
 import Umivalniki from "./components/products/Umivalniki";
 import Manhattan from "./components/products/Manhattan";
+import Products from "./components/products/Products";
 
 const root = document.getElementById("root");
 
@@ -23,6 +24,8 @@ ReactDOM.createRoot(root).render(
     <Route path="Pliti" element={<Pliti/>} />
     <Route path="Umivalniki" element={<Umivalniki/>} />
     <Route path="Manhattan" element={<Manhattan/>} />
+    <Route path="Products" element={<Products/>} />
+    
 </Routes>
   </BrowserRouter>
 );  
